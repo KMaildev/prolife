@@ -77,8 +77,8 @@
                                             style="width: 100%; height: 260px; background-size: center; object-fit: cover;">
                                     </div>
                                     <div class="courses__thumb-logo mr-15">
-                                        <img src="{{ asset('data/logo.jpg') }}" alt=""
-                                            style="width: 80px; border-radius: 3px;">
+                                        <img src="{{ asset('data/logo_bg.png') }}" alt=""
+                                            style="width: 150px; ">
                                     </div>
                                 </div>
                                 <div class="courses-content">

@@ -25,8 +25,10 @@
     </div>
 
 
-    <section class="featurs-services pt-110 pb-90">
+    <div class="courses-area py-5 wow fadeInUp" data-wow-delay="0.3s"
+        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
         <div class="container">
+
             <div class="row justify-content-center">
                 <div class="col-xxl-10">
                     <div class="section_title_wrapper text-center mb-50 wow fadeInUp" data-wow-delay="0.3s"
@@ -49,20 +51,57 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row project-grid">
                 @foreach ($images as $image)
-                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay="0.3s"
-                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                        <div class="features"
-                            style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
-                            <div class="features__thumb" style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;">
-                                <img src="{{ asset('data/technical/' . $image) }}" alt=""
-                                    style="width: 100%; height: 260px; background-size: center; object-fit: cover; ">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6  col-md-6 training courses mb-40">
+                        <div class="courses">
+                            <div class="courses__thumb">
+                                <div class="courses__thumb-img">
+                                    <img src="{{ asset('data/technical/' . $image) }}" alt=""
+                                        style="width: 100%; height: 260px; background-size: center; object-fit: cover; ">
+                                </div>
+                                <div class="courses__thumb-logo mr-15">
+                                    <img src="{{ asset('data/logo_bg.png') }}" alt="" style="width: 150px; ">
+                                </div>
+                            </div>
+                            <div class="courses-content">
+                                <h3 class="courses-content__title mt-15 mb-25">
+                                    <a href="javascript::void(0)">
+                                        Prolife Co., Ltd
+                                    </a>
+                                </h3>
+                                <p>
+                                    Azami Training Center
+                                </p>
+                            </div>
+                            <div class="courses__meta">
+                                <ul>
+                                    <li>
+                                        <a class="border-none" href="javascript::void(0)">
+                                            <i class="flaticon-clock"></i>
+                                            September
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript::void(0)">
+                                            <i class="fa fa-clock"></i>
+                                            2023
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{ route('contact.index') }}" class="course-link-btn">
+                                            Contact
+                                            <i class="far fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
-    </section>
+    </div>
 @endsection

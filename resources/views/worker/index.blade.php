@@ -25,7 +25,8 @@
     </div>
 
 
-    <section class="featurs-services pt-110 pb-90">
+    <section class="blog-area py-5 pb-90 wow fadeInUp" data-wow-delay="0.3s"
+        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-10">
@@ -61,19 +62,34 @@
 
             <div class="row">
                 @foreach ($images as $image)
-                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay="0.3s"
-                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                        <div class="features"
-                            style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
-                            <div class="features__thumb" style="box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                        <article class="blog mb-30">
+                            <div class="blog__thumb">
                                 <img src="{{ asset('data/skill/' . $image) }}" alt=""
                                     style="width: 100%; height: 260px; background-size: center; object-fit: cover; ">
                             </div>
-                        </div>
+                            <div class="blog__content">
+                                <div class="blog-meta">
+                                    <span>
+                                        <i class="far fa-user"></i>
+                                        Special Skilled Worker Training
+                                    </span>
+                                </div>
+                                <div class="blog-text">
+                                    <h3 class="blog__content__title">
+                                        <a href="javascript::void(0)">
+                                            Prolife Co., Ltd
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Azami Training Center
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 @endforeach
             </div>
         </div>
     </section>
-
 @endsection

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 04, 2023 at 05:28 AM
+-- Generation Time: Sep 07, 2023 at 02:45 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -32,18 +32,18 @@ CREATE TABLE `activities` (
   `title` text DEFAULT NULL,
   `images` text DEFAULT NULL,
   `categorie_id` text DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `submit_date` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `activities`
 --
 
-INSERT INTO `activities` (`id`, `title`, `images`, `categorie_id`, `created_at`, `updated_at`) VALUES
-(1, 'Class Room Activities', 'https://www.website.phyusan.com/admin/uploads/files/9ytc6v5x0l8gkbs.jpg,https://www.website.phyusan.com/admin/uploads/files/5pqs4y3djhk6_0v.jpg,https://www.website.phyusan.com/admin/uploads/files/4frd9neyq8p673b.jpg,https://www.website.phyusan.com/admin/uploads/files/nr6vil9weqa37h1.jpg,https://www.website.phyusan.com/admin/uploads/files/6setfq30zdw5xi2.jpg,https://www.website.phyusan.com/admin/uploads/files/edvyofu8nm6stwq.jpg,https://www.website.phyusan.com/admin/uploads/files/s6pt30hcuifxk8q.jpg,https://www.website.phyusan.com/admin/uploads/files/y93rsjdpgbi47ax.jpg,https://www.website.phyusan.com/admin/uploads/files/h1o0dsity6ar4qj.jpg,https://www.website.phyusan.com/admin/uploads/files/gcmx8pzfej4v0wn.jpg,https://www.website.phyusan.com/admin/uploads/files/m647fq5c8xj9ytg.jpg,https://www.website.phyusan.com/admin/uploads/files/8p_67thr5faocsv.jpg,https://www.website.phyusan.com/admin/uploads/files/comie8wr532apdu.jpg,https://www.website.phyusan.com/admin/uploads/files/lotgepzs6fj34u_.jpg,https://www.website.phyusan.com/admin/uploads/files/mqe4kdf_8aswoty.jpg,https://www.website.phyusan.com/admin/uploads/files/gv1c0wypmlxsbe5.jpg,https://www.website.phyusan.com/admin/uploads/files/t61o40sguejh28z.jpg,https://www.website.phyusan.com/admin/uploads/files/8fhdgj9czmabnwv.jpg,https://www.website.phyusan.com/admin/uploads/files/gk3ylnqx8aoif5p.jpg,https://www.website.phyusan.com/admin/uploads/files/2jznreiglbk0t1_.jpg,https://www.website.phyusan.com/admin/uploads/files/pvfzuejoln4tb1q.jpg', '1', NULL, NULL),
-(2, 'Interview Activities', 'https://www.website.phyusan.com/admin/uploads/files/z_g7lardbwvqx25.jpg,https://www.website.phyusan.com/admin/uploads/files/hjsib768pofa1v_.jpg,https://www.website.phyusan.com/admin/uploads/files/8rjnzet_bwhoc1u.jpg,https://www.website.phyusan.com/admin/uploads/files/re29yh5c0nd6g8v.jpg,https://www.website.phyusan.com/admin/uploads/files/34aes8xfntvurz5.jpg,https://www.website.phyusan.com/admin/uploads/files/1p0nrlaifydz8ub.jpg,https://www.website.phyusan.com/admin/uploads/files/jytip9hsa5zeckn.jpg,https://www.website.phyusan.com/admin/uploads/files/dnfp314otegq9ua.jpg,https://www.website.phyusan.com/admin/uploads/files/ul1gcte2p7hvznd.jpg,https://www.website.phyusan.com/admin/uploads/files/uvawy80pg6e79qo.jpg,https://www.website.phyusan.com/admin/uploads/files/3vrjs5wefp98uc4.jpg,https://www.website.phyusan.com/admin/uploads/files/2mch4ozlgir51ye.jpg,https://www.website.phyusan.com/admin/uploads/files/oqitcmdwyp4h5nk.jpg,https://www.website.phyusan.com/admin/uploads/files/zb87alkxwmrugyq.jpg', '1', NULL, NULL),
-(3, 'Departure Activities', 'https://www.website.phyusan.com/admin/uploads/files/n0di93szvhmp85u.jpg,https://www.website.phyusan.com/admin/uploads/files/v8ng43h2s9qbfix.jpg,https://www.website.phyusan.com/admin/uploads/files/slm7zw05ckfervy.jpg,https://www.website.phyusan.com/admin/uploads/files/39i6xhrg2k_uq1n.jpg,https://www.website.phyusan.com/admin/uploads/files/69ci2vutyl7nk1j.jpg,https://www.website.phyusan.com/admin/uploads/files/3un5dt604mc7ihq.jpg,https://www.website.phyusan.com/admin/uploads/files/l0ut6vyk1x2n5mw.jpg,https://www.website.phyusan.com/admin/uploads/files/wvk8lhzqxfpu1eg.jpg,https://www.website.phyusan.com/admin/uploads/files/nxhl5f04cpmd6vu.jpg,https://www.website.phyusan.com/admin/uploads/files/xcrz490qu3nmpa_.jpg,https://www.website.phyusan.com/admin/uploads/files/o82tamg5ijxvbc3.jpg', '1', NULL, NULL);
+INSERT INTO `activities` (`id`, `title`, `images`, `categorie_id`, `updated_at`, `created_at`, `submit_date`) VALUES
+(2, 'Interview Activities', 'https://www.website.phyusan.com/admin/uploads/files/z_g7lardbwvqx25.jpg,https://www.website.phyusan.com/admin/uploads/files/hjsib768pofa1v_.jpg,https://www.website.phyusan.com/admin/uploads/files/8rjnzet_bwhoc1u.jpg,https://www.website.phyusan.com/admin/uploads/files/re29yh5c0nd6g8v.jpg,https://www.website.phyusan.com/admin/uploads/files/34aes8xfntvurz5.jpg,https://www.website.phyusan.com/admin/uploads/files/1p0nrlaifydz8ub.jpg,https://www.website.phyusan.com/admin/uploads/files/jytip9hsa5zeckn.jpg,https://www.website.phyusan.com/admin/uploads/files/dnfp314otegq9ua.jpg,https://www.website.phyusan.com/admin/uploads/files/ul1gcte2p7hvznd.jpg,https://www.website.phyusan.com/admin/uploads/files/uvawy80pg6e79qo.jpg,https://www.website.phyusan.com/admin/uploads/files/3vrjs5wefp98uc4.jpg,https://www.website.phyusan.com/admin/uploads/files/2mch4ozlgir51ye.jpg,https://www.website.phyusan.com/admin/uploads/files/oqitcmdwyp4h5nk.jpg,https://www.website.phyusan.com/admin/uploads/files/zb87alkxwmrugyq.jpg', '1', NULL, NULL, '1.1.2023'),
+(3, 'Departure Activities', 'https://www.website.phyusan.com/admin/uploads/files/n0di93szvhmp85u.jpg,https://www.website.phyusan.com/admin/uploads/files/v8ng43h2s9qbfix.jpg,https://www.website.phyusan.com/admin/uploads/files/slm7zw05ckfervy.jpg,https://www.website.phyusan.com/admin/uploads/files/39i6xhrg2k_uq1n.jpg,https://www.website.phyusan.com/admin/uploads/files/69ci2vutyl7nk1j.jpg,https://www.website.phyusan.com/admin/uploads/files/3un5dt604mc7ihq.jpg,https://www.website.phyusan.com/admin/uploads/files/l0ut6vyk1x2n5mw.jpg,https://www.website.phyusan.com/admin/uploads/files/wvk8lhzqxfpu1eg.jpg,https://www.website.phyusan.com/admin/uploads/files/nxhl5f04cpmd6vu.jpg,https://www.website.phyusan.com/admin/uploads/files/xcrz490qu3nmpa_.jpg,https://www.website.phyusan.com/admin/uploads/files/o82tamg5ijxvbc3.jpg', '1', NULL, NULL, '1.1.2023');
 
 -- --------------------------------------------------------
 
@@ -200,7 +200,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (9, '2023_07_03_051745_create_employers_table', 5),
 (10, '2023_07_03_070032_create_countries_table', 6),
 (11, '2023_07_03_070257_create_jobs_table', 7),
-(12, '2023_07_03_143404_create_teams_table', 8);
+(12, '2023_07_03_143404_create_teams_table', 8),
+(13, '2023_09_06_120522_add_date_to_activities_table', 9);
 
 -- --------------------------------------------------------
 
@@ -246,6 +247,16 @@ CREATE TABLE `teams` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `teams`
+--
+
+INSERT INTO `teams` (`id`, `name`, `photo`, `position`, `created_at`, `updated_at`) VALUES
+(1, 'Mg Mg', 'https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1195', 'Manager', NULL, NULL),
+(2, 'Mg Mg', 'https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1195', 'Manager', NULL, NULL),
+(3, 'Mg Mg', 'https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1195', 'Manager', NULL, NULL),
+(4, 'Mg Mg', 'https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1195', 'Manager', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -417,7 +428,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -429,7 +440,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`

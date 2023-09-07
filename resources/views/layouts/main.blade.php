@@ -5,10 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Prolife Co., Ltd - @yield('title')</title>
-    <meta name="description" content="">
+
+    <meta content="" name="Prolife Co., Ltd">
+    <meta name="keywords" content="Prolife Co., Ltd" />
+    <meta property="og:title" content="Prolife Co., Ltd" />
+    <meta property="og:image" content="{{ asset('data/logo.jpg') }}" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Prolife Co., Ltd" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.html">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('data/logo.jpg') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
